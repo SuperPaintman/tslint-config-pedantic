@@ -1,0 +1,47 @@
+{
+  "name": "tslint-config-pedantic",
+  "version": "0.0.1",
+  "description": "A TSLint config for the pedantic style",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint",
+    "test": "echo ''",
+    "prepublish": "in-publish && (npm run lint && npm run test) || not-in-publish",
+    "prepush": "npm run prepublish",
+    "precommit": "npm run lint"
+  },
+  "keywords": [
+    "tslint",
+    "config",
+    "pedantic",
+    "typescript",
+    "ts"
+  ],
+  "author": {
+    "name": "Aleksandr Krivoshchekov",
+    "email": "SuperPaintmanDeveloper@gmail.com",
+    "url": "https://superpaintman.com/"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "configs/",
+    "lib/",
+    "*.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tslint-eslint-rules": "5.1.0"
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "in-publish": "2.0.0",
+    "js-yaml": "3.11.0",
+    "tslint": "5.9.1",
+    "typescript": "2.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperPaintman/tslint-pedantic.git"
+  }
+}
