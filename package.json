@@ -31,6 +31,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "codelyzer": "4.2.1",
     "tslint-eslint-rules": "5.1.0"
   },
   "devDependencies": {

@@ -1,0 +1,100 @@
+extends:
+    - ./base.yml
+    - codelyzer
+
+rules:
+    #===========================================================================
+    # TSLint
+    #===========================================================================
+    #---------------------------------------------------------------------------
+    ## Functionality
+    #---------------------------------------------------------------------------
+    no-submodule-imports: false
+
+    no-unsafe-any: false
+
+    #===========================================================================
+    # Codelyzer
+    #===========================================================================
+    #---------------------------------------------------------------------------
+    ## Functionality
+    #---------------------------------------------------------------------------
+    banana-in-box: true
+
+    contextual-life-cycle: true
+
+    decorator-not-allowed: true
+
+    pipe-impure: true
+
+    templates-no-negated-async: true
+
+    trackBy-function: true
+
+    #---------------------------------------------------------------------------
+    ## Maintainability
+    #---------------------------------------------------------------------------
+    i18n: false
+
+    no-attribute-parameter-decorator: true
+
+    no-forward-ref: true
+
+    no-input-rename: true
+
+    no-output-named-after-standard-event: true
+
+    no-output-on-prefix: true
+
+    no-output-rename: true
+
+    no-unused-css: true
+
+    use-life-cycle-interface: true
+
+    use-pipe-decorator: true
+
+    use-pipe-transform-interface: true
+
+    use-view-encapsulation: true
+
+    #---------------------------------------------------------------------------
+    ## Style
+    #---------------------------------------------------------------------------
+    angular-whitespace:
+        - true
+        - check-interpolation
+        - check-pipe
+        - check-semicolon
+
+    component-class-suffix:
+        - true
+        - Component
+
+    component-selector:
+        - true
+        - element
+        - app
+        - kebab-case
+
+    directive-class-suffix:
+        - true
+        - Directive
+
+    directive-selector:
+        - true
+        - attribute
+        - app
+        - camelCase
+
+    import-destructuring-spacing: true
+
+    pipe-naming:
+        - true
+        - camelCase
+
+    use-host-property-decorator: true
+
+    use-input-property-decorator: true
+
+    use-output-property-decorator: true

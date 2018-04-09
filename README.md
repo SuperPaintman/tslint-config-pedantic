@@ -42,6 +42,17 @@ Extend your `tsling.json`:
 ```
 
 
+**Angular (2 / 4 / 5 / etc.)**:
+
+```json
+{
+  "extends": [
+    "tslint-config-pedantic/angular"
+  ]
+}
+```
+
+
 --------------------------------------------------------------------------------
 
 ## Contributing
