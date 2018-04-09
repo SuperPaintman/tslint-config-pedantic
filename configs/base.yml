@@ -246,7 +246,7 @@ rules:
         - true
         -
             limit: 80
-            ignore-pattern: "^import |^export |^}\\s+from\\s+['\"]|\\/\\/"
+            ignore-pattern: "^import |^export |^}\\s+from\\s+['\"]|\\/\\/|\/\\*.*?\\*\/\\s*$"
 
     no-default-export: false
 
